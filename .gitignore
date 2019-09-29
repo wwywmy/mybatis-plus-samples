@@ -1,0 +1,43 @@
+# IntelliJ project files
+.idea/
+*.iml
+*.ipr
+*.iws
+out
+gem
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Maven files
+target/
+
+mybatis-plus-sample-active-record/
+mybatis-plus-sample-auto-fill-metainfo/
+mybatis-plus-sample-crud/
+mybatis-plus-sample-customize-basemapper/
+mybatis-plus-sample-deluxe/
+mybatis-plus-sample-dts-rabbit/
+mybatis-plus-sample-dynamic-tablename/
+mybatis-plus-sample-enum/
+mybatis-plus-sample-execution-analysis/
+mybatis-plus-sample-generator/
+mybatis-plus-sample-logic-delete/
+mybatis-plus-sample-optimistic-locker/
+mybatis-plus-sample-pagination/
+mybatis-plus-sample-performance-analysis/
+mybatis-plus-sample-quickstart-springmvc/
+mybatis-plus-sample-reduce-springmvc/
+mybatis-plus-sample-sequence/
+mybatis-plus-sample-sql-injector/
+mybatis-plus-sample-tenant/
+mybatis-plus-sample-typehandler/
+mybatis-plus-sample-wrapper/
