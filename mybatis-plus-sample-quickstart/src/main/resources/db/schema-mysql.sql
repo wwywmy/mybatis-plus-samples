@@ -53,5 +53,6 @@ CREATE TABLE `user` (
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户',
   `address` varchar(2000) DEFAULT NULL COMMENT '地址',
   `version` int(255) DEFAULT NULL COMMENT '版本',
+  `is_delete` int(255) DEFAULT '0' COMMENT '删除',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
