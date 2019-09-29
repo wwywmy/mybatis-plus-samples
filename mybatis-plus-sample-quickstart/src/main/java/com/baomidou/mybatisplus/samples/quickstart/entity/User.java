@@ -2,6 +2,7 @@ package com.baomidou.mybatisplus.samples.quickstart.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler;
 import com.baomidou.mybatisplus.samples.quickstart.enums.GenderEnum;
 
@@ -18,4 +19,6 @@ public class User {
 	private Long tenantId;
 	@TableField(typeHandler = FastjsonTypeHandler.class)
 	private Address address;
+	@Version
+	private Integer version;
 }

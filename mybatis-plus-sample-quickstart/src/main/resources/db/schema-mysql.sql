@@ -44,14 +44,14 @@ CREATE TABLE `teacher`  (
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`  (
+CREATE TABLE `user` (
   `id` bigint(20) NOT NULL COMMENT '主键ID',
-  `name` varchar(30)DEFAULT NULL COMMENT '姓名',
-  `age` int(11) NULL DEFAULT NULL COMMENT '年龄',
-  `email` varchar(50)DEFAULT NULL COMMENT '邮箱',
-  `gender` char(1)DEFAULT NULL COMMENT '性别',
-  `tenant_id` bigint(20) NULL DEFAULT NULL COMMENT '租户',
-  `address` varchar(2000)DEFAULT NULL COMMENT '地址',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB ;
-
+  `name` varchar(30) DEFAULT NULL COMMENT '姓名',
+  `age` int(11) DEFAULT NULL COMMENT '年龄',
+  `email` varchar(50) DEFAULT NULL COMMENT '邮箱',
+  `gender` char(1) DEFAULT NULL COMMENT '性别',
+  `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户',
+  `address` varchar(2000) DEFAULT NULL COMMENT '地址',
+  `version` int(255) DEFAULT NULL COMMENT '版本',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
