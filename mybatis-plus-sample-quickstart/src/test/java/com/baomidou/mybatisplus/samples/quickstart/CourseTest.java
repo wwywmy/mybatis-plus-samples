@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.samples.quickstart.entity.Course;
 import com.baomidou.mybatisplus.samples.quickstart.mapper.CourseMapper;
 
@@ -52,6 +53,12 @@ public class CourseTest {
 			int count = courseMapper.insert(course);
 			log.info("count={}", count);
 		}
+	}
+	
+	@Test
+	public void selectAllTest() {
+		List<Course> courseList = courseMapper.selectList(new QueryWrapper<Course>());
+		courseList.forEach(c->{log.info(c.toString());});
 	}
 
 }
