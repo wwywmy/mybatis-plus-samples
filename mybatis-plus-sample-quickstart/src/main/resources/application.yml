@@ -14,6 +14,24 @@ spring:
     #password: ENC(QM+qNMH0NUX/QMFLl8UVBg==)
     #password: Abc123#$%123
     password: ENC(T0lXkKg2WyEgpcvxFu5fO5HsCGCneEed)
+  #配置activemq
+  activemq:
+    #activemq的url
+    broker-url: tcp://127.0.0.1:61616
+    #用户名
+    user: admin
+    #密码
+    #password: admin
+    password: ENC(I+iR2CkREwrKPIFLY4aF7g==)
+    #是否使用线程池
+    pool:
+      enabled: false
+    #是否信任所有包
+    packages:
+      trust-all: true
+  #默认情况下，activemq使用的是queue模式，如果要使用topic模式，必须设置为true
+  jms:
+    pub-sub-domain: false
 
 # MP 配置
 mybatis-plus:

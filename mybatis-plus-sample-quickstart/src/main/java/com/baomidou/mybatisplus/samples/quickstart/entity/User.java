@@ -1,5 +1,7 @@
 package com.baomidou.mybatisplus.samples.quickstart.entity;
 
+import java.io.Serializable;
+
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -11,7 +13,9 @@ import lombok.Data;
 
 @Data
 @TableName(autoResultMap = true)
-public class User {
+public class User implements Serializable{
+	private static final long serialVersionUID = 3981097349922510021L;
+	
 	private Long id;
 	private String name;
 	private Integer age;
