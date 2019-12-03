@@ -11,7 +11,9 @@ spring:
     url: jdbc:p6spy:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
     username: root
     #password: 123456
-    password: ENC(QM+qNMH0NUX/QMFLl8UVBg==)
+    #password: ENC(QM+qNMH0NUX/QMFLl8UVBg==)
+    #password: Abc123#$%123
+    password: ENC(T0lXkKg2WyEgpcvxFu5fO5HsCGCneEed)
 
 # MP 配置
 mybatis-plus:
