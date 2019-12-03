@@ -28,3 +28,24 @@ password: Abc123
 ----OUTPUT----------------------
 
 QM+qNMH0NUX/QMFLl8UVBg==
+
+
+#修改MySQL的时区
+
+C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+
+最后一行加上
+
+default-time-zone='+8:00'
+
+MySQL服务重启
+
+--查看时区值
+
+show variables like '%time_zone%';
+
+方法2：
+
+配置JDBC连接参数
+
+在url连接字符串后面加上?serverTimezone=UTC
