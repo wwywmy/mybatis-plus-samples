@@ -1,0 +1,7 @@
+server:
+  port: 8010
+
+spring: 
+  flyway:
+    # 启用或禁用 flyway
+    enabled: false

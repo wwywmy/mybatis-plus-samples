@@ -1,0 +1,15 @@
+server:
+  port: 8020
+  
+spring: 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    #password: 123456
+    #password: ENC(QM+qNMH0NUX/QMFLl8UVBg==)
+    #password: Abc123#$%123
+    password: ENC(T0lXkKg2WyEgpcvxFu5fO5HsCGCneEed)
+  flyway:
+    # 启用或禁用 flyway
+    enabled: true

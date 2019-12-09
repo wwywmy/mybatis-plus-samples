@@ -1,4 +1,4 @@
-package com.baomidou.mybatisplus.samples.quickstart;
+package com.baomidou.mybatisplus.samples.quickstart.component;
 
 import java.util.List;
 
